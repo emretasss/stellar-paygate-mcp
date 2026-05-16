@@ -1,0 +1,38 @@
+{
+  "name": "@stellar-paygate/api",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "main": "dist/index.js",
+  "scripts": {
+    "prebuild": "pnpm --filter @stellar-paygate/shared build",
+    "build": "tsc -p tsconfig.json",
+    "dev": "tsx watch src/index.ts",
+    "start": "node dist/index.js",
+    "mcp": "tsx src/mcp-stdio.ts",
+    "pretest": "pnpm --filter @stellar-paygate/shared build",
+    "test": "vitest run",
+    "lint": "tsc -p tsconfig.json --noEmit"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.29.0",
+    "@stellar/mpp": "^0.5.1",
+    "@stellar/stellar-sdk": "^15.1.0",
+    "@stellar-paygate/shared": "workspace:*",
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.3",
+    "express": "^5.2.1",
+    "mppx": "^0.4.11",
+    "zod": "^4.2.0"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.19",
+    "@types/express": "^5.0.6",
+    "@types/node": "^20.19.25",
+    "@types/supertest": "^6.0.3",
+    "supertest": "^7.1.4",
+    "tsx": "^4.21.0",
+    "typescript": "^5.9.3",
+    "vitest": "^2.1.9"
+  }
+}

@@ -1,0 +1,13 @@
+# Rust's output directory
+target
+
+# Local settings
+.soroban
+.stellar
+.env
+.env.local
+node_modules
+dist
+coverage
+playwright-report
+test-results
