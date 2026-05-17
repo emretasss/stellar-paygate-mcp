@@ -1,6 +1,6 @@
 # Stellar PayGate MCP
 
-![Stellar PayGate MCP dashboard](docs/screenshots/paygate-paid-call.png)
+
 
 Stellar PayGate MCP is a pay-per-use marketplace for AI agents and MCP tools on Stellar. APIs can return a payment challenge, accept a Stellar Testnet USDC payment credential, run the requested AI tool, and write a hashed usage receipt to a Soroban registry contract. The project combines MPP-style paid APIs, a local MCP server, a React operator UI, and an auditable on-chain registry for tool listings, paid calls, and disputes.
 
@@ -19,9 +19,9 @@ AI agents need a simple way to buy small digital services without subscriptions,
 
 ## Screenshots
 
-![Dashboard](docs/screenshots/paygate-dashboard.png)
 
-![Mobile view](docs/screenshots/paygate-mobile.png)
+
+
 
 ## Architecture
 
