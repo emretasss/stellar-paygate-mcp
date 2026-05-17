@@ -1,7 +1,5 @@
 # Stellar PayGate MCP
 
-
-
 Stellar PayGate MCP is a pay-per-use marketplace for AI agents and MCP tools on Stellar. APIs can return a payment challenge, accept a Stellar Testnet USDC payment credential, run the requested AI tool, and write a hashed usage receipt to a Soroban registry contract. The project combines MPP-style paid APIs, a local MCP server, a React operator UI, and an auditable on-chain registry for tool listings, paid calls, and disputes.
 
 ## Vision
@@ -16,12 +14,6 @@ AI agents need a simple way to buy small digital services without subscriptions,
 - Full deployment log: [docs/testnet-deployment.md](docs/testnet-deployment.md)
 - Network passphrase: `Test SDF Network ; September 2015`
 - Testnet USDC SAC: `CBIELTK6YBZJU5UP2WWQEUCYKLPU6AUNZ2BQ4WWFEIE3USCIHMXQDAMA`
-
-## Screenshots
-
-
-
-
 
 ## Architecture
 
@@ -141,19 +133,13 @@ Record a demo paid-call receipt:
 PAYGATE_CONTRACT_ID=<CONTRACT_ID> ./scripts/record-demo-call.sh
 ```
 
-Capture README screenshots:
-
-```bash
-PAYGATE_WEB_URL=http://localhost:5174 pnpm screenshots
-```
-
 ## Development Plan
 
 1. Build the Soroban registry with tool listings, paid-call receipts, provider stats, and dispute states.
 2. Add deterministic paid AI tools and shared hashing so receipts are reproducible.
 3. Expose HTTP endpoints with MPP-ready payment enforcement and a demo `402` retry path.
 4. Expose the same tools through MCP for agent clients.
-5. Ship the React dashboard, deployment scripts, screenshots, and Testnet transaction proof.
+5. Ship the React dashboard, deployment scripts, and Testnet transaction proof.
 
 ## Future Grant Roadmap
 

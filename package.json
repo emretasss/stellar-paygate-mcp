@@ -8,7 +8,6 @@
     "build": "pnpm -r build && cargo build --target wasm32v1-none --release -p paygate-registry",
     "build:contract": "cargo build --target wasm32v1-none --release -p paygate-registry",
     "dev": "pnpm --parallel --filter @stellar-paygate/api --filter @stellar-paygate/web dev",
-    "screenshots": "node scripts/capture-screenshots.mjs",
     "test": "cargo test -p paygate-registry && pnpm -r test",
     "test:contract": "cargo test -p paygate-registry",
     "test:node": "pnpm -r test",
@@ -17,8 +16,5 @@
   "engines": {
     "node": ">=20"
   },
-  "packageManager": "pnpm@10.30.3",
-  "devDependencies": {
-    "playwright": "^1.60.0"
-  }
+  "packageManager": "pnpm@10.30.3"
 }
